@@ -8,13 +8,13 @@ my_data.value = 25.5
 serialized_data = my_data.SerializeToString()
 # print(serialized_data)
 
+# Save the data to a .bin file
 with open("my_data.bin", "wb") as f:
     f.write(serialized_data)
 
 print("Saving data to .bin file.")
 
 # Read the data from the .bin file
-
 with open("my_data.bin", "rb") as f:
     serialized_data = f.read()
 
