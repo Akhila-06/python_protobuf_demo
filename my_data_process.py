@@ -5,8 +5,14 @@ my_data.id = 123
 my_data.name = "Sensor Reading"
 my_data.value = 25.5
 
+
+## Un Comment & Demo this to show the importance of datatypes in Proto Buf
+# my_data.id = "123"
+# my_data.name = "Sensor Reading"
+# my_data.value = 25.5
+
 serialized_data = my_data.SerializeToString()
-# print(serialized_data)
+print(serialized_data)
 
 # Save the data to a .bin file
 with open("my_data.bin", "wb") as f:
