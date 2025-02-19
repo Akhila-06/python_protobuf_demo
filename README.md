@@ -19,7 +19,7 @@ message MyData {
 protoc --python_out=. my_data.proto
 ```
 
-**Step 3**
+**Step 3***
 
 ```
 poetry add protobuf
